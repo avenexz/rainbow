@@ -1,0 +1,540 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'SF Pro Display', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: minmax(0, 1fr);
+}
+
+:where(body) {
+    hyphens: auto;
+    overflow-wrap: break-word;
+}
+
+/* khmer-font {
+    font-family: "Kantumruy Pro", sans-serif;
+    font-weight: 500;
+*/
+
+new {
+    color: red;
+}
+
+nav {
+    /* position: sticky; */
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #fff;
+    /* border-bottom: 2px solid #111; */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.logo h3 {
+    margin-left: 10px;
+    color: #111;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links a {
+    display: block;
+    padding: 30px 16px;
+    color: #111;
+    text-decoration: none;
+    font-size: 18px;
+    /* font-size: 16px; */
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all ease-in-out 100ms;
+}
+
+.nav-links a:hover {
+    background-color: #111;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-links .nav-cta-button {
+    color: #fff;
+    background-color: #111;
+    padding: 10px 18px;
+    margin-left: 16px;
+    border: #111 solid 2px;
+    border-radius: 50px;
+}
+
+.nav-links .nav-cta-button:hover {
+    border: #111 solid 2px;
+    color: #111;
+    background-color: #fff;
+    /* cursor: pointer; */
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    width: 34px;
+}
+
+.hamburger .bar {
+    flex-basis: 100%;
+    height: 4px;
+    background-color: #111;
+    margin: 3px;
+    border-radius: 50px;
+}
+
+.mySlides {
+    display: none;
+    text-align: center;
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+}
+
+.slideshow-container .mySlides img {
+    width: 100%;
+}
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 16px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.news-container-media-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-container-media-container .news-container {
+    padding: 20px;
+    width: 100%;
+}
+
+.news-container-media-container .news-container .rainbowNews h3,
+.news-container-section .rainbowNews h3,
+.media-container-section .rainbowMedia h3 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: #808080 solid 1px;
+    padding-bottom: 20px;
+}
+
+.news-container-media-container .news-container .rainbowNews .news,
+.news-container-section .rainbowNews .news,
+.media-container-section .rainbowMedia .media {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: #808080 solid 1px;
+}
+
+.news-container-media-container .news-container .rainbowNews .news .date,
+.news-container-section .rainbowNews .date,
+.media-container-section .rainbowMedia .date {
+    font-size: 18px;
+    color: #808080;
+}
+
+.news-container-section-mini .rainbowNews-mini .news-mini .date {
+    font-size: 20px;
+}
+
+.news-container-media-container .news-container .rainbowNews .news .news-title,
+.news-container-section .rainbowNews .news-title,
+.media-container-section .rainbowMedia .media-title {
+    font-size: 20px;
+}
+
+.news-container-section-mini .rainbowNews-mini .news-mini .news-title {
+    font-size: 30px;
+}
+
+.news-container-media-container .news-container .rainbowNews .news,
+.news-container-section .rainbowNews .news,
+.media-container-section .rainbowMedia .media {
+    cursor: pointer;
+    transition: all ease-in-out 100ms;
+}
+
+.news-container-media-container .news-container .rainbowNews .news:hover,
+.news-container-section .rainbowNews .news:hover,
+.media-container-section .rainbowMedia .media:hover {
+    color: #fff;
+    background-color: #111;
+    /* transition: all ease-in-out 100ms; */
+}
+
+.contact-container-section .rainbowContact .contact:hover {
+    background: none;
+    cursor: default;
+}
+
+.view-more {
+    color: #808080;
+    text-align: right;
+    margin-top: 20px;
+    /* margin-bottom: 20px; */
+    cursor: pointer;
+    transition: all ease-in-out 100ms;
+}
+
+.view-more:hover {
+    color: #111;
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+}
+
+footer .social-media svg {
+    width: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    transition: all ease-in-out 100ms;
+}
+
+footer .social-media svg:hover {
+    scale: 1.15;
+}
+
+.logo-footer {
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.back-to-top {
+    color: #808080;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.back-to-top:hover {
+    text-decoration: underline;
+}
+
+.news-container-section,
+.media-container-section {
+    padding: 20px;
+    width: 100%;
+}
+
+.img-profileParagraph {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rainbowProfile .img-profileParagraph .imgProfile {
+    width: 100%;
+    text-align: center;
+}
+
+.rainbowProfile .img-profileParagraph .profileParagraph {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.profile-container-section .rainbowProfile img {
+    width: 50%;
+}
+
+.profile-container-section .rainbowProfile .profileParagraph h4 {
+    text-transform: capitalize;
+    border: none;
+    font-size: 36px;
+}
+
+.contact-container-section .rainbowContact .contact .emailButton,
+.contact-container-section .rainbowContact .contact .igButton {
+    background-color: #111;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+    width: fit-content;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 1px solid #111;
+    transition: all ease-in-out 100ms;
+}
+
+.contact-container-section .rainbowContact .contact .emailButton:hover,
+.contact-container-section .rainbowContact .contact .igButton:hover {
+    color: #111;
+    background-color: #fff;
+    border: 1px solid #111;
+}
+
+.news-container-section-mini .rainbowNews-mini .news-mini:hover {
+    background: none;
+    color: currentColor;
+}
+
+.news-container-section-mini .rainbowNews-mini .news-mini {
+    cursor: default;
+}
+
+.backBtn {
+    color: #808080;
+    cursor: pointer;
+}
+
+.backBtn:hover {
+    text-decoration: underline;
+    color: #111;
+}
+
+.bBtn {
+    /* back button of <p> */
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.news-container-section-mini .rainbowNews-mini .news-detail .paragraph {
+    margin-top: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.news-container-section-mini .rainbowNews-mini .news-detail img {
+    width: 1024px;
+}
+
+.news-container-section-mini .rainbowNews-mini .news-detail .more-detail {
+    margin-top: 20px;
+    color: #808080;
+    line-height: 1.5;
+    border-bottom: #808080 solid 1px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        height: 80px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+
+    .nav-links li {
+        flex-basis: 100%;
+    }
+
+    .nav-links a {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .nav-links a:hover {
+        background-color: #111;
+        color: #fff;
+    }
+
+    .nav-links .nav-cta-button {
+        padding: 30px 16px;
+        margin-left: 0;
+        border: none;
+        border-radius: 0;
+        margin-bottom: 20px;
+    }
+
+    .nav-links .nav-cta-button:hover {
+        background-color: #111;
+        color: #fff;
+        border: none;
+    }
+
+    .news-container-media-container {
+        display: inline;
+    }
+
+    .img-profileParagraph {
+        display: inline;
+    }
+
+    .contact-container-section .rainbowContact .contact .emailButton,
+    .contact-container-section .rainbowContact .contact .igButton {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 912px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        height: 80px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+
+    .nav-links li {
+        flex-basis: 100%;
+    }
+
+    .nav-links a {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .nav-links a:hover {
+        background-color: #111;
+        color: #fff;
+    }
+
+    .nav-links .nav-cta-button {
+        padding: 30px 16px;
+        margin-left: 0;
+        border: none;
+        border-radius: 0;
+        margin-bottom: 20px;
+    }
+
+    .nav-links .nav-cta-button:hover {
+        background-color: #111;
+        color: #fff;
+        border: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        height: 80px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+
+    .nav-links li {
+        flex-basis: 100%;
+    }
+
+    .nav-links a {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .nav-links a:hover {
+        background-color: #111;
+        color: #fff;
+    }
+
+    .nav-links .nav-cta-button {
+        padding: 30px 16px;
+        margin-left: 0;
+        border: none;
+        border-radius: 0;
+        margin-bottom: 20px;
+    }
+
+    .nav-links .nav-cta-button:hover {
+        background-color: #111;
+        color: #fff;
+        border: none;
+    }
+}
