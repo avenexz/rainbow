@@ -70,7 +70,7 @@ nav {
     padding: 30px 16px;
     color: #111;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     /* font-size: 16px; */
     font-weight: 500;
     text-transform: uppercase;
@@ -256,7 +256,8 @@ footer {
 }
 
 footer .social-media svg {
-    width: 40px;
+    width: 32px;
+    margin: 0 10px;
     padding-top: 20px;
     padding-bottom: 20px;
     cursor: pointer;
@@ -331,10 +332,15 @@ footer .beta-ver {
 
 .profile-container-section .rainbowProfile .profileParagraph svg {
     width: 32px;
+    margin: 0 10px;
     margin-top: 20px;
     margin-bottom: 20px;
     cursor: pointer;
     transition: all ease-in-out 100ms;
+}
+
+.profile-container-section .rainbowProfile .profileParagraph svg:first-child {
+    margin-left: 0;
 }
 
 .profile-container-section .rainbowProfile .profileParagraph svg:hover {
