@@ -376,6 +376,11 @@ footer .beta-ver {
     border: 1px solid #111;
 }
 
+.contact-container-section .rainbowContact .contact .noteContact {
+    margin-top: 20px;
+    color: #111;
+}
+
 .news-container-section-mini .rainbowNews-mini .news-mini:hover {
     background: none;
     color: currentColor;
