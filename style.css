@@ -1,5 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
-@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');   
 
 * {
     box-sizing: border-box;
@@ -197,22 +197,22 @@ nav {
 .news-container-media-container .news-container .rainbowNews .news .date,
 .news-container-section .rainbowNews .date,
 .media-container-section .rainbowMedia .date {
-    font-size: 18px;
+    font-size: 16px;
     color: #808080;
 }
 
 .news-container-section-mini .rainbowNews-mini .news-mini .date {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .news-container-media-container .news-container .rainbowNews .news .news-title,
 .news-container-section .rainbowNews .news-title,
 .media-container-section .rainbowMedia .media-title {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .news-container-section-mini .rainbowNews-mini .news-mini .news-title {
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .news-container-media-container .news-container .rainbowNews .news,
@@ -307,6 +307,7 @@ footer .beta-ver {
 }
 
 .rainbowProfile .img-profileParagraph .imgProfile {
+    margin-top: 20px;
     width: 100%;
     text-align: center;
 }
@@ -323,7 +324,8 @@ footer .beta-ver {
 .profile-container-section .rainbowProfile .profileParagraph h4 {
     text-transform: capitalize;
     border: none;
-    font-size: 36px;
+    font-size: 24px;
+    font-weight: 500;
 }
 
 .profile-container-section .rainbowProfile .profileParagraph p {
@@ -359,7 +361,7 @@ footer .beta-ver {
 .contact-container-section .rainbowContact .contact .igButton {
     background-color: #111;
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     padding: 20px;
     width: fit-content;
     border-radius: 20px;
@@ -403,13 +405,17 @@ footer .beta-ver {
 .bBtn {
     /* back button of <p> */
     margin-top: 20px;
-    font-size: 20px;
+    /* font-size: 20px; */
 }
 
 .news-container-section-mini .rainbowNews-mini .news-detail .paragraph {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 20px;
+}
+
+.news-container-section-mini .rainbowNews-mini .news-detail .hashtag {
+    color: #0000FF;
 }
 
 .news-container-section-mini .rainbowNews-mini .news-detail img {
